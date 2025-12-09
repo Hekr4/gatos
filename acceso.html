@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Panel</title>
+  <style>
+    body{
+      margin:0;
+      background:#000;
+      font-family: Inter, sans-serif;
+      color:#fff;
+      padding:20px;
+    }
+
+    .back{
+      position:fixed;
+      top:18px;
+      left:18px;
+      font-size:26px;
+      color:#fff;
+      text-decoration:none;
+      background:none;
+      border:none;
+      cursor:pointer;
+    }
+
+    .gallery{
+      margin-top:60px;
+      display:flex;
+      flex-direction:column;
+      gap:40px;
+    }
+
+    .card{
+      background:rgba(70,70,70,0.22);
+      border-radius:20px;
+      padding:18px;
+      backdrop-filter: blur(6px);
+      border:1px solid rgba(255,255,255,0.05);
+      width: fit-content;
+      max-width:90%;
+      margin:auto;
+      transform: rotate(var(--rot));
+    }
+
+    .card img{
+      width:100%;
+      border-radius:14px;
+      display:block;
+    }
+  </style>
+</head>
+<body>
+<a href="acceso.html" class="back">←</a>
+<div class="card">
+<h2>Acceso concedido</h2>
+<p>Bienvenido/a</p>
+<p>✨ Disfruta ✨</p>
+</div>
+
+<div class="gallery">
+  <img src="0c611805-3480-4456-9cac-01fedb1c92ce.png" class="pic">
+  <img src="60ccf4c9-1dc1-4133-bfa7-cf254be8f38e.png" class="pic">
+  <img src="a9abaf1d-f830-4fa7-8a73-2a8cb51c3753.png" class="pic">
+  <img src="ec5ae549-43f5-459c-9146-7ada7266c8a6.png" class="pic">
+</div>
+</body>
+</html>

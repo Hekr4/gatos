@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Acceso</title>
+<style>
+body{
+margin:0;
+background:black;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+font-family:Arial;
+color:white;
+}
+.card{
+background:rgba(60,60,60,0.25);
+padding:28px;
+border-radius:22px;
+width:320px;
+text-align:center;
+}
+input{
+width:100%;
+padding:12px;
+border-radius:14px;
+border:none;
+outline:none;
+margin-bottom:12px;
+background:#222;
+color:white;
+font-size:16px;
+}
+button{
+padding:10px 16px;
+border-radius:12px;
+border:none;
+background:#ffd166;
+color:black;
+font-weight:bold;
+cursor:pointer;
+width:100%;
+}
+.msg{margin-top:10px; height:20px; font-size:14px;}
+</style>
+</head>
+<body>
+<div class="card">
+<h2>Bienvenid@</h2>
+<p>Ingresa la contraseña</p>
+<input type="password" id="pw" placeholder="Contraseña...">
+<button onclick="check()">Entrar</button>
+<div class="msg" id="msg"></div>
+</div>
+
+
+<script>
+function check(){
+const pw = document.getElementById("pw").value;
+const msg = document.getElementById("msg");
+if(pw === "queso"){
+msg.textContent = "Correcto";
+setTimeout(()=> window.location.href = "panel.html", 400);
+} else {
+msg.textContent = "Incorrecto";
+}
+}
+</script>
+</body>
+</html>
